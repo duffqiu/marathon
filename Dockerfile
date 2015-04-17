@@ -11,6 +11,7 @@ RUN yum install -y wget tar
 RUN wget --no-cookies --no-check-certificate  http://downloads.mesosphere.io/marathon/v0.8.1/marathon-0.8.1.tgz -O marathon.tgz
 
 RUN tar zxf marathon.tgz
+RUN mv marathon-0.8.1 marathon
 
 RUN rm -rf marathon.tgz
 
