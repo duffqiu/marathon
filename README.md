@@ -13,9 +13,6 @@ Note: you need to install mesos from mesosphere with yum commond before update t
 - startup marthon as a container. (you can get a image from my dockfile in github) the running command is 
 
 ```
-docker run -d --name marathon duffqiu/marathon -p 8080:8080 --master zk://<ZK_IP>:2181/mesos \
-    --zk zk://<ZK_IP>:2181/marathon \
-    --checkpoint \
-    --task_launch_timeout 300000
+docker run -d --name marathon  -p 8080:8080 duffqiu/marathon --master zk://<ZK_IP>:2181/mesos --zk zk://<ZK_IP>:2181/marathon --checkpoint --task_launch_timeout 300000
 ```
 
