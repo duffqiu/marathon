@@ -17,4 +17,6 @@ RUN rm -rf marathon.tgz
 
 WORKDIR /marathon
 
+EXPOSE 8080
+
 ENTRYPOINT ["./bin/start"]
